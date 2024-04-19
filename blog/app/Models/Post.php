@@ -10,6 +10,6 @@ class Post extends Model
     use HasFactory;
     protected $guarded=[];
     public function reviews(){
-        return $this->belongsTo(Review::class);
+        return $this->hasMany(Review::class);
     }
 }
